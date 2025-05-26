@@ -1,0 +1,39 @@
+plugins {
+    id("java")
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation("net.serenity-bdd:serenity-core:3.9.8")
+    implementation("net.serenity-bdd:serenity-junit:3.9.8")
+    implementation("net.serenity-bdd:serenity-screenplay:3.9.8")
+    implementation("net.serenity-bdd:serenity-screenplay-webdriver:3.9.8")
+    implementation("net.serenity-bdd:serenity-cucumber:3.9.8")
+
+
+    implementation("io.cucumber:cucumber-java:7.11.0")
+    implementation("io.cucumber:cucumber-junit:7.11.0")
+
+
+    implementation("org.springframework:spring-core:5.3.30")
+    implementation("org.springframework:spring-context:5.3.30")
+    implementation("org.springframework:spring-beans:5.3.30")
+    implementation("org.springframework:spring-test:5.3.30")
+
+    testImplementation("org.slf4j:slf4j-simple:2.0.9")
+}
+
+tasks.test {
+    systemProperty("file.encoding", "UTF-8")
+    testLogging {
+        events("passed", "skipped", "failed")
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}

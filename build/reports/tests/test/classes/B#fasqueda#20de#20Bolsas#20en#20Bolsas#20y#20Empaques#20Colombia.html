@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Búsqueda de Bolsas en Bolsas y Empaques Colombia</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Búsqueda de Bolsas en Bolsas y Empaques Colombia</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Búsqueda de Bolsas en Bolsas y Empaques Colombia</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1m42.31s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">85%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Búsqueda con campo vacío"></a>
+<h3 class="failures">Búsqueda con campo vacío</h3>
+<span class="code">
+<pre>io.cucumber.junit.UndefinedStepException: The step 'el sistema debería manejar la búsqueda apropiadamente' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Entonces(&quot;el sistema debería manejar la búsqueda apropiadamente&quot;)
+public void el_sistema_debería_manejar_la_búsqueda_apropiadamente() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Búsqueda compleja con validaciones avanzadas</td>
+<td class="success">17.148s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">Búsqueda con campo vacío</td>
+<td class="failures">7.711s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">Búsqueda simple de bolsas</td>
+<td class="success">22.927s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Búsquedas con diferentes términos relacionados #1</td>
+<td class="success">12.845s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Búsquedas con diferentes términos relacionados #2</td>
+<td class="success">13.663s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Búsquedas con diferentes términos relacionados #3</td>
+<td class="success">13.469s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Búsquedas con diferentes términos relacionados #4</td>
+<td class="success">14.550s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+@busqueda_bolsas @busqueda_simple @smoke
+Escenario: Búsqueda simple de bolsas                                            ?[90m# src/test/resources/features/busqueda_bolsas.feature:12?[0m
+  ?[32mDado ?[0m?[32mque el usuario está en la página principal de Bolsas y Empaques Colombia?[0m ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.queElUsuarioEstaEnLaPaginaPrincipal()?[0m
+  ?[32mCuando ?[0m?[32mel usuario busca ?[0m?[32m?[1m&quot;bolsas&quot;?[0m                                              ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.elUsuarioBusca(java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mdebería ver resultados de búsqueda?[0m                                   ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.deberiaVerResultadosDeBusqueda()?[0m
+  ?[32mY ?[0m?[32mdebería ver productos relacionados con ?[0m?[32m?[1m&quot;bolsas&quot;?[0m                             ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.deberiaVerProductosRelacionadosCon(java.lang.String)?[0m
+  ?[32mY ?[0m?[32mdebería ver al menos ?[0m?[32m?[1m1?[0m?[32m productos en los resultados?[0m                          ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.deberiaVerAlMenosProductosEnLosResultados(int)?[0m
+  ?[32mY ?[0m?[32mno debería ver mensaje de sin resultados?[0m                                    ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.noDeberiaVerMensajeDeSinResultados()?[0m
+
+@busqueda_bolsas @busqueda_compleja @regression
+Escenario: Búsqueda compleja con validaciones avanzadas                         ?[90m# src/test/resources/features/busqueda_bolsas.feature:20?[0m
+  ?[32mDado ?[0m?[32mque el usuario está en la página principal de Bolsas y Empaques Colombia?[0m ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.queElUsuarioEstaEnLaPaginaPrincipal()?[0m
+  ?[32mCuando ?[0m?[32mel usuario busca ?[0m?[32m?[1m&quot;bolsas plasticas&quot;?[0m                                    ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.elUsuarioBusca(java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mdebería ver resultados de búsqueda?[0m                                   ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.deberiaVerResultadosDeBusqueda()?[0m
+  ?[32mY ?[0m?[32mdebería ver productos relacionados con ?[0m?[32m?[1m&quot;bolsas&quot;?[0m                             ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.deberiaVerProductosRelacionadosCon(java.lang.String)?[0m
+  ?[32mY ?[0m?[32mdebería ver al menos ?[0m?[32m?[1m5?[0m?[32m productos en los resultados?[0m                          ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.deberiaVerAlMenosProductosEnLosResultados(int)?[0m
+  ?[32mY ?[0m?[32mno debería ver mensaje de sin resultados?[0m                                    ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.noDeberiaVerMensajeDeSinResultados()?[0m
+
+@busqueda_bolsas @busqueda_vacia @edge_case
+Escenario: Búsqueda con campo vacío                                             ?[90m# src/test/resources/features/busqueda_bolsas.feature:30?[0m
+  ?[32mDado ?[0m?[32mque el usuario está en la página principal de Bolsas y Empaques Colombia?[0m ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.queElUsuarioEstaEnLaPaginaPrincipal()?[0m
+  ?[32mCuando ?[0m?[32mel usuario realiza una búsqueda vacía?[0m                                  ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.elUsuarioRealizaUnaBusquedaVacia()?[0m
+  ?[33mEntonces ?[0m?[33mel sistema debería manejar la búsqueda apropiadamente?[0m
+
+@busqueda_bolsas @busqueda_variaciones @regression
+Esquema del escenario: Búsquedas con diferentes términos relacionados           ?[90m# src/test/resources/features/busqueda_bolsas.feature:43?[0m
+  ?[32mDado ?[0m?[32mque el usuario está en la página principal de Bolsas y Empaques Colombia?[0m ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.queElUsuarioEstaEnLaPaginaPrincipal()?[0m
+  ?[32mCuando ?[0m?[32mel usuario busca ?[0m?[32m?[1m&quot;bolsas plasticas&quot;?[0m                                    ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.elUsuarioBusca(java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mdebería ver resultados de búsqueda?[0m                                   ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.deberiaVerResultadosDeBusqueda()?[0m
+  ?[32mY ?[0m?[32mdebería ver productos relacionados con ?[0m?[32m?[1m&quot;bolsas&quot;?[0m                             ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.deberiaVerProductosRelacionadosCon(java.lang.String)?[0m
+  ?[32mY ?[0m?[32mdebería ver al menos ?[0m?[32m?[1m1?[0m?[32m productos en los resultados?[0m                          ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.deberiaVerAlMenosProductosEnLosResultados(int)?[0m
+
+@busqueda_bolsas @busqueda_variaciones @regression
+Esquema del escenario: Búsquedas con diferentes términos relacionados           ?[90m# src/test/resources/features/busqueda_bolsas.feature:44?[0m
+  ?[32mDado ?[0m?[32mque el usuario está en la página principal de Bolsas y Empaques Colombia?[0m ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.queElUsuarioEstaEnLaPaginaPrincipal()?[0m
+  ?[32mCuando ?[0m?[32mel usuario busca ?[0m?[32m?[1m&quot;bolsas papel&quot;?[0m                                        ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.elUsuarioBusca(java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mdebería ver resultados de búsqueda?[0m                                   ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.deberiaVerResultadosDeBusqueda()?[0m
+  ?[32mY ?[0m?[32mdebería ver productos relacionados con ?[0m?[32m?[1m&quot;bolsas&quot;?[0m                             ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.deberiaVerProductosRelacionadosCon(java.lang.String)?[0m
+  ?[32mY ?[0m?[32mdebería ver al menos ?[0m?[32m?[1m1?[0m?[32m productos en los resultados?[0m                          ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.deberiaVerAlMenosProductosEnLosResultados(int)?[0m
+
+@busqueda_bolsas @busqueda_variaciones @regression
+Esquema del escenario: Búsquedas con diferentes términos relacionados           ?[90m# src/test/resources/features/busqueda_bolsas.feature:45?[0m
+  ?[32mDado ?[0m?[32mque el usuario está en la página principal de Bolsas y Empaques Colombia?[0m ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.queElUsuarioEstaEnLaPaginaPrincipal()?[0m
+  ?[32mCuando ?[0m?[32mel usuario busca ?[0m?[32m?[1m&quot;bolsas biodegradables&quot;?[0m                               ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.elUsuarioBusca(java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mdebería ver resultados de búsqueda?[0m                                   ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.deberiaVerResultadosDeBusqueda()?[0m
+  ?[32mY ?[0m?[32mdebería ver productos relacionados con ?[0m?[32m?[1m&quot;bolsas&quot;?[0m                             ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.deberiaVerProductosRelacionadosCon(java.lang.String)?[0m
+  ?[32mY ?[0m?[32mdebería ver al menos ?[0m?[32m?[1m1?[0m?[32m productos en los resultados?[0m                          ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.deberiaVerAlMenosProductosEnLosResultados(int)?[0m
+
+@busqueda_bolsas @busqueda_variaciones @regression
+Esquema del escenario: Búsquedas con diferentes términos relacionados           ?[90m# src/test/resources/features/busqueda_bolsas.feature:46?[0m
+  ?[32mDado ?[0m?[32mque el usuario está en la página principal de Bolsas y Empaques Colombia?[0m ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.queElUsuarioEstaEnLaPaginaPrincipal()?[0m
+  ?[32mCuando ?[0m?[32mel usuario busca ?[0m?[32m?[1m&quot;empaques&quot;?[0m                                            ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.elUsuarioBusca(java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mdebería ver resultados de búsqueda?[0m                                   ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.deberiaVerResultadosDeBusqueda()?[0m
+  ?[32mY ?[0m?[32mdebería ver productos relacionados con ?[0m?[32m?[1m&quot;empaques&quot;?[0m                           ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.deberiaVerProductosRelacionadosCon(java.lang.String)?[0m
+  ?[32mY ?[0m?[32mdebería ver al menos ?[0m?[32m?[1m1?[0m?[32m productos en los resultados?[0m                          ?[90m# stepsDefinition.BusquedaBolsasStepDefinitions.deberiaVerAlMenosProductosEnLosResultados(int)?[0m
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Búsqueda simple de bolsas(búsqueda-de-bolsas-en-bolsas-y-empaques-colombia;búsqueda-simple-de-bolsas)
+--------------------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+may. 25, 2025 8:25:55 P. M. org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFORMACIÓN: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+may. 25, 2025 8:25:59 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 136
+may. 25, 2025 8:25:59 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Búsqueda simple de bolsas
+----------------------------------------------------------------------
+[AsyncHttpClient-1-4] WARN org.asynchttpclient.netty.handler.WebSocketHandler - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:367)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:398)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+may. 25, 2025 8:26:15 P. M. org.openqa.selenium.remote.http.WebSocket$Listener onError
+ADVERTENCIA: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:367)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:398)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Búsqueda compleja con validaciones avanzadas(búsqueda-de-bolsas-en-bolsas-y-empaques-colombia;búsqueda-compleja-con-validaciones-avanzadas)
+--------------------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+may. 25, 2025 8:26:17 P. M. org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFORMACIÓN: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+may. 25, 2025 8:26:19 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 136
+may. 25, 2025 8:26:19 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Búsqueda compleja con validaciones avanzadas
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Búsqueda con campo vacío(búsqueda-de-bolsas-en-bolsas-y-empaques-colombia;búsqueda-con-campo-vacío)
+--------------------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+may. 25, 2025 8:26:33 P. M. org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFORMACIÓN: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+may. 25, 2025 8:26:36 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 136
+may. 25, 2025 8:26:36 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
+ |_   _| | __| / __| |_   _|   | _ \ | __| | \| | |   \  |_ _| | \| |  / __|
+   | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
+   |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
+
+Búsqueda con campo vacío
+-----------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Búsquedas con diferentes términos relacionados(búsqueda-de-bolsas-en-bolsas-y-empaques-colombia;búsquedas-con-diferentes-términos-relacionados)
+--------------------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+may. 25, 2025 8:26:41 P. M. org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFORMACIÓN: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+may. 25, 2025 8:26:43 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 136
+may. 25, 2025 8:26:43 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Búsquedas con diferentes términos relacionados
+----------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+may. 25, 2025 8:26:54 P. M. org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFORMACIÓN: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+may. 25, 2025 8:26:56 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 136
+may. 25, 2025 8:26:56 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Búsquedas con diferentes términos relacionados
+----------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+may. 25, 2025 8:27:08 P. M. org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFORMACIÓN: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+may. 25, 2025 8:27:10 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 136
+may. 25, 2025 8:27:10 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+may. 25, 2025 8:27:21 P. M. org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFORMACIÓN: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+may. 25, 2025 8:27:22 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 136
+may. 25, 2025 8:27:22 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at 25/05/2025, 8:27:37 p. m.</p>
+</div>
+</div>
+</body>
+</html>
