@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 
 public class ElementoPresente {
 
-    // Elementos de la barra de búsqueda
+
     public static final Target FORMULARIO_BUSQUEDA = Target.the("Formulario de búsqueda")
             .located(By.cssSelector("form[action='/search'][role='search']"));
 
@@ -14,10 +14,6 @@ public class ElementoPresente {
 
     public static final Target BOTON_BUSCAR = Target.the("Botón buscar")
             .located(By.cssSelector("button[type='submit'][aria-label='Buscar']"));
-
-
-
-    // Elementos de resultados de búsqueda
 // Example
     public static Target CONTENEDOR_RESULTADOS = Target.the("Contenedor de resultados")
             .located(By.cssSelector(".product-list.product-list--collection"));
@@ -28,7 +24,7 @@ public class ElementoPresente {
             .located(By.cssSelector("h1, .page-title, .collection-title"));
 
     public static final Target MENSAJE_SIN_RESULTADOS = Target.the("Mensaje sin resultados")
-            .located(By.cssSelector(".no-results, .empty-search, .search-empty, empty-state"));
+            .located(By.cssSelector(".no-results, .empty-search, .search-empty, .empty-state"));
 
     public static final Target NUMERO_RESULTADOS = Target.the("Número de resultados")
             .located(By.cssSelector(".results-count, .search-count"));
@@ -39,7 +35,4 @@ public class ElementoPresente {
 
     public static final Target SIGUIENTE_PAGINA = Target.the("Siguiente página")
             .located(By.cssSelector(".pagination .next, .page-next"));
-
-
-
 }

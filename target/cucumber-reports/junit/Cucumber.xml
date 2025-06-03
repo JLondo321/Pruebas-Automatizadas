@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="81.863" tests="8" skipped="0" failures="0" errors="0">
+<testcase classname="Búsqueda de Bolsas en Bolsas y Empaques Colombia" name="Búsqueda simple de bolsas" time="14.396">
+<system-out><![CDATA[
+Dado que el usuario está en la página principal de Bolsas y Empaques Colombia.passed
+Cuando el usuario busca "bolsas"............................................passed
+Entonces debería ver resultados de búsqueda.................................passed
+Y debería ver productos relacionados con "bolsas"...........................passed
+Y debería ver al menos 1 productos en los resultados........................passed
+Y no debería ver mensaje de sin resultados..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Búsqueda de Bolsas en Bolsas y Empaques Colombia" name="Búsqueda compleja con validaciones avanzadas" time="10.902">
+<system-out><![CDATA[
+Dado que el usuario está en la página principal de Bolsas y Empaques Colombia.passed
+Cuando el usuario busca "bolsas plasticas"..................................passed
+Entonces debería ver resultados de búsqueda.................................passed
+Y debería ver productos relacionados con "bolsas"...........................passed
+Y debería ver al menos 5 productos en los resultados........................passed
+Y no debería ver mensaje de sin resultados..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Búsqueda de Bolsas en Bolsas y Empaques Colombia" name="Búsqueda con campo vacío" time="7.987">
+<system-out><![CDATA[
+Dado que el usuario está en la página principal de Bolsas y Empaques Colombia.passed
+Cuando el usuario realiza una búsqueda vacía................................passed
+Entonces el sistema debería manejar la búsqueda apropiadamente..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Búsqueda de Bolsas en Bolsas y Empaques Colombia" name="Búsquedas con diferentes términos relacionados - Example #1.1" time="7.408">
+<system-out><![CDATA[
+Dado que el usuario está en la página principal de Bolsas y Empaques Colombia.passed
+Cuando el usuario busca "bolsas plasticas"..................................passed
+Entonces debería ver resultados de búsqueda.................................passed
+Y debería ver productos relacionados con "bolsas"...........................passed
+Y debería ver al menos 1 productos en los resultados........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Búsqueda de Bolsas en Bolsas y Empaques Colombia" name="Búsquedas con diferentes términos relacionados - Example #1.2" time="8.052">
+<system-out><![CDATA[
+Dado que el usuario está en la página principal de Bolsas y Empaques Colombia.passed
+Cuando el usuario busca "bolsas papel"......................................passed
+Entonces debería ver resultados de búsqueda.................................passed
+Y debería ver productos relacionados con "bolsas"...........................passed
+Y debería ver al menos 1 productos en los resultados........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Búsqueda de Bolsas en Bolsas y Empaques Colombia" name="Búsquedas con diferentes términos relacionados - Example #1.3" time="7.783">
+<system-out><![CDATA[
+Dado que el usuario está en la página principal de Bolsas y Empaques Colombia.passed
+Cuando el usuario busca "bolsas biodegradables".............................passed
+Entonces debería ver resultados de búsqueda.................................passed
+Y debería ver productos relacionados con "bolsas"...........................passed
+Y debería ver al menos 1 productos en los resultados........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Búsqueda de Bolsas en Bolsas y Empaques Colombia" name="Búsquedas con diferentes términos relacionados - Example #1.4" time="7.162">
+<system-out><![CDATA[
+Dado que el usuario está en la página principal de Bolsas y Empaques Colombia.passed
+Cuando el usuario busca "empaques"..........................................passed
+Entonces debería ver resultados de búsqueda.................................passed
+Y debería ver productos relacionados con "empaques".........................passed
+Y debería ver al menos 1 productos en los resultados........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Búsqueda de Bolsas en Bolsas y Empaques Colombia" name="Añadir un producto al carrito desde los resultados de búsqueda" time="11.068">
+<system-out><![CDATA[
+Dado que el usuario está en la página principal de Bolsas y Empaques Colombia.passed
+Cuando el usuario busca "bolsas"............................................passed
+Y selecciona el primer producto de la lista.................................passed
+Y hace clic en el botón "Añadir al carrito".................................passed
+Y el icono del carrito debería mostrar la cantidad actualizada..............passed
+]]></system-out>
+</testcase>
+</testsuite>

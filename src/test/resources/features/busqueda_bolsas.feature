@@ -24,8 +24,6 @@ Característica: Búsqueda de Bolsas en Bolsas y Empaques Colombia
     Y debería ver al menos 5 productos en los resultados
     Y no debería ver mensaje de sin resultados
 
-
-
   @busqueda_vacia @edge_case
   Escenario: Búsqueda con campo vacío
     Cuando el usuario realiza una búsqueda vacía
@@ -44,3 +42,12 @@ Característica: Búsqueda de Bolsas en Bolsas y Empaques Colombia
       | bolsas papel          | bolsas           |
       | bolsas biodegradables | bolsas           |
       | empaques              | empaques         |
+
+
+  @busqueda_bolsas @agregar_carrito @smoke
+  Escenario: Añadir un producto al carrito desde los resultados de búsqueda
+    Dado que el usuario está en la página principal de Bolsas y Empaques Colombia
+    Cuando el usuario busca "bolsas"
+    Y selecciona el primer producto de la lista
+    Y hace clic en el botón "Añadir al carrito"
+    Y el icono del carrito debería mostrar la cantidad actualizada
