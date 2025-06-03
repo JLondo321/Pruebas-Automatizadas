@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="10" failures="0" name="Búsqueda de Bolsas en Bolsas y Empaques Colombia" skipped="0" tests="10" time="0.92" timestamp="2025-06-02 06:08:01"><testcase name="Búsqueda simple de bolsas"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+com.google.common.base.Preconditions.checkNotNull(Preconditions.java:889)&#13;
+stepsDefinition.BusquedaBolsasStepDefinitions.setupSerenityStageAndActor(BusquedaBolsasStepDefinitions.java:39)&#13;
+</system-err></testcase><testcase name="Búsqueda compleja con validaciones avanzadas"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+com.google.common.base.Preconditions.checkNotNull(Preconditions.java:889)&#13;
+stepsDefinition.BusquedaBolsasStepDefinitions.setupSerenityStageAndActor(BusquedaBolsasStepDefinitions.java:39)&#13;
+</system-err></testcase><testcase name="Búsqueda con campo vacío"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+com.google.common.base.Preconditions.checkNotNull(Preconditions.java:889)&#13;
+stepsDefinition.BusquedaBolsasStepDefinitions.setupSerenityStageAndActor(BusquedaBolsasStepDefinitions.java:39)&#13;
+</system-err></testcase><testcase name="Búsquedas con diferentes términos relacionados"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+com.google.common.base.Preconditions.checkNotNull(Preconditions.java:889)&#13;
+stepsDefinition.BusquedaBolsasStepDefinitions.setupSerenityStageAndActor(BusquedaBolsasStepDefinitions.java:39)&#13;
+</system-err></testcase><testcase name="Añadir un producto al carrito desde los resultados de búsqueda"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+com.google.common.base.Preconditions.checkNotNull(Preconditions.java:889)&#13;
+stepsDefinition.BusquedaBolsasStepDefinitions.setupSerenityStageAndActor(BusquedaBolsasStepDefinitions.java:39)&#13;
+</system-err></testcase><testcase name="Verificar la visibilidad de los enlaces de la sección &quot;INFORMACIÓN IMPORTANTE&quot; del footer"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+com.google.common.base.Preconditions.checkNotNull(Preconditions.java:889)&#13;
+stepsDefinition.BusquedaBolsasStepDefinitions.setupSerenityStageAndActor(BusquedaBolsasStepDefinitions.java:39)&#13;
+</system-err></testcase><testcase name="Navegar a la página de Política tratamiento de datos desde el footer"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+com.google.common.base.Preconditions.checkNotNull(Preconditions.java:889)&#13;
+stepsDefinition.BusquedaBolsasStepDefinitions.setupSerenityStageAndActor(BusquedaBolsasStepDefinitions.java:39)&#13;
+</system-err></testcase></testsuite>
